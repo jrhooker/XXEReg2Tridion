@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage("Clean Up"){
+            steps {
+                deleteDir()
+            }
+        }
+        stage("Clone Repo"){
+            steps{
+                sh "git clone https://github.com/jrhooker/XXEReg2Tridion.git"
+            }
+        }
+		 stage("Run Batch"){
+            steps{
+                dir("XXEReg2Tridion/batch") {
+				sh "./launch.bat" 
+				}
+            }
+        }
+    
+    }
+}
