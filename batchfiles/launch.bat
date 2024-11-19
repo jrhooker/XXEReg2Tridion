@@ -13,14 +13,7 @@ rd /s /q %WORKINGDIR%\out\
 
 mkdir %WORKINGDIR%\out\
 
-rd /s /q %WORKINGDIR%\in\
-
-mkdir %WORKINGDIR%\in\
-
-#xcopy %WORKINGDIR%\%PATHTOPROJECT% %WORKINGDIR%\out\ /S /Y
-
-
-java -cp %WORKINGDIR%/depend/tools/saxon9/saxon9he.jar;%WORKINGDIR%\depend\tools\Saxon9\xml-commons-resolver-1.2\resolver.jar ^
+java -cp %WORKINGDIR%/depend/tools/saxon9/saxon9he.jar;%WORKINGDIR%\depend\tools\Saxon9\xml-commons-resolver-1.2.jar ^
 -Dxml.catalog.files=..\depend\tools\Saxon9\catalog.xml ^
 net.sf.saxon.Transform ^
 -r:org.apache.xml.resolver.tools.CatalogResolver ^
@@ -32,7 +25,7 @@ net.sf.saxon.Transform ^
 DITAMAPNAME="%DITAMAPNAME%" PATHTOPROJECT="%PATHTOPROJECT%" OUTPUTPATH="%OUTPUTPATH%" WORKINGDIR="%WORKINGDIR%" 
   
   
-java -cp %WORKINGDIR%/depend/tools/saxon9/saxon9he.jar;%WORKINGDIR%\depend\tools\Saxon9\xml-commons-resolver-1.2\resolver.jar ^
+java -cp %WORKINGDIR%/depend/tools/saxon9/saxon9he.jar;%WORKINGDIR%\depend\tools\Saxon9\xml-commons-resolver-1.2.jar ^
 -Dxml.catalog.files=..\depend\tools\Saxon9\catalog.xml ^
 net.sf.saxon.Transform ^
 -r:org.apache.xml.resolver.tools.CatalogResolver ^
