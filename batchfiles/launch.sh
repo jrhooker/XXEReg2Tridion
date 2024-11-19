@@ -7,6 +7,7 @@ cd ..\
 
 export WORKINGDIR=$PWD
 
+echo which java
 echo $WORKINGDIR
 echo $PATHTOPROJECT
 echo $OUTPUTPATH
