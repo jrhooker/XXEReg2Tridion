@@ -5,7 +5,7 @@ export DITAMAPNAME=titan_regs.ditamap
 
 cd ..\
 
-export WORKINGDIR=%CD%
+export WORKINGDIR=$CD
 
 cd $WORKINGDIR\batchfiles
 
@@ -22,7 +22,7 @@ net.sf.saxon.Transform ^
 -o:$WORKINGDIR$OUTPUTPATH\test.xml ^
 -s:$WORKINGDIR\$PATHTOPROJECT\$FILENAME ^
 -xsl:$WORKINGDIR\depend\custom\generate_ditamap.xsl ^
-DITAMAPNAME="%DITAMAPNAME%" PATHTOPROJECT="$PATHTOPROJECT" OUTPUTPATH="$OUTPUTPATH" WORKINGDIR="$WORKINGDIR" 
+DITAMAPNAME="$DITAMAPNAME" PATHTOPROJECT="$PATHTOPROJECT" OUTPUTPATH="$OUTPUTPATH" WORKINGDIR="$WORKINGDIR" 
   
   
 java -cp $WORKINGDIR/depend/tools/saxon9/saxon9he.jar;$WORKINGDIR\depend\tools\Saxon9\xml-commons-resolver-1.2.jar ^
