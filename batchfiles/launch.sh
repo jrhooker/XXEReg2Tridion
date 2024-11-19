@@ -9,7 +9,7 @@ export WORKINGDIR=$PWD
 
 export WHICHJAVA=which java
 
-echo which java
+echo java -version
 echo $WHICHJAVA
 echo $WORKINGDIR
 echo $PATHTOPROJECT
