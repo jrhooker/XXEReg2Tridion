@@ -5,7 +5,13 @@ export DITAMAPNAME=titan_regs.ditamap
 
 cd ..\
 
-export WORKINGDIR=$CD
+export WORKINGDIR=$pwd
+
+echo $WORKINGDIR
+echo $PATHTOPROJECT
+echo $OUTPUTPATH
+echo $FILENAME
+echo $DITAMAPNAME
 
 cd $WORKINGDIR\batchfiles
 
