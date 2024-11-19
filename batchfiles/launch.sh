@@ -5,7 +5,7 @@ export DITAMAPNAME=titan_regs.ditamap
 
 cd ..\
 
-export WORKINGDIR=$pwd
+export WORKINGDIR=$PWD
 
 echo $WORKINGDIR
 echo $PATHTOPROJECT
