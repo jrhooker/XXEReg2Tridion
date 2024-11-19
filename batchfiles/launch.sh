@@ -7,9 +7,9 @@ cd ..\
 
 export WORKINGDIR=$PWD
 
-export WHICHJAVA = which java
+export WHICHJAVA=which java
 
-
+echo which java
 echo $WHICHJAVA
 echo $WORKINGDIR
 echo $PATHTOPROJECT
