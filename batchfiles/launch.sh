@@ -19,7 +19,7 @@ echo $DITAMAPNAME
 
 cd $WORKINGDIR/batchfiles
 
-mkdir $WORKINGDIR/out/
+
 
 
  
