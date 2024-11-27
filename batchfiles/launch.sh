@@ -19,7 +19,7 @@ echo $DITAMAPNAME
 
 cd $WORKINGDIR/batchfiles
 
-java -cp $WORKINGDIR/depend/tools/saxon9/saxon9he.jar;$WORKINGDIR/depend/tools/Saxon9/xml-commons-resolver-1.2.jar ^
+java -cp $WORKINGDIR\depend\tools\saxon9\saxon9he.jar;$WORKINGDIR\depend\tools\Saxon9\xml-commons-resolver-1.2.jar ^
 -Dxml.catalog.files=../depend/tools/Saxon9/catalog.xml ^
 net.sf.saxon.Transform ^
 -r:org.apache.xml.resolver.tools.CatalogResolver ^
