@@ -21,7 +21,5 @@ cd $WORKINGDIR/batchfiles
 
 mkdir $WORKINGDIR/out/
 
-java -cp $WORKINGDIR/depend/tools/saxon9/saxon9he.jar;$WORKINGDIR/depend/tools/Saxon9/xml-commons-resolver-1.2.jar ^
-
 
  
